@@ -20,22 +20,5 @@ jobs:
           max_post_count: '9'
           comment_tag_name: 'BLOG-POST-LIST'
           date_format: 'yyyy-mm-dd'
-          
-          template: |
-            <table style="width:100%; border:0px solid transparent; margin-bottom: 20px;">
-              <tr>
-                <td style="width:120px; vertical-align:top; padding-right:15px; border:0px solid transparent;">
-                  <a href="$url">
-                    <img width="120px" src="$postImage" alt="$title" style="border-radius: 8px;">
-                  </a>
-                </td>
-                <td style="vertical-align:top; border:0px solid transparent;">
-                  <a href="$url" style="font-weight: bold; font-size: 1.1em; text-decoration: none;">$title</a>
-                  <br>
-                  <small style="color: #6a737d;">Publié le $date</small>
-                  <p style="margin-top: 5px; font-size: 0.9em;">$description...</p>
-                </td>
-              </tr>
-            </table>
-          
+          template: "<tr><td>$title</td><td>$url</td></tr>"
           commit_message: 'feat: Update README with latest blog posts'
