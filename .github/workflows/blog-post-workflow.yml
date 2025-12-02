@@ -16,7 +16,7 @@ jobs:
       - name: Fetch and Update README
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          feed_url: 'https://www.avonture.be/blog/rss.xml'
+          feed_list: 'https://www.avonture.be/blog/rss.xml'
           max_post_count: '9'
           comment_tag_name: 'feed'
           date_format: 'yyyy-mm-dd'
